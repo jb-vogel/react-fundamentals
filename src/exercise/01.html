@@ -20,11 +20,14 @@
 
 <html>
   <body>
-    <div id="root"></div>
     <script type="module">
-      let element = document.createElement('div')
-      element.textContent = 'Hello World!'
-      document.getElementById('root').appendChild(element)
+      let rootElement = document.createElement('div')
+      rootElement.id = 'root'
+      document.body.appendChild(rootElement)
+
+      let childElement = document.createElement('div')
+      childElement.textContent = 'Hello World!'
+      document.getElementById('root').appendChild(childElement)
     </script>
   </body>
 </html>
